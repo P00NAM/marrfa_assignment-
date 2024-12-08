@@ -1,0 +1,116 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9; /* Light gray background for contrast */
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* App container */
+.app {
+  margin: 0 auto;
+  padding: 1rem;
+  
+}
+
+/* Header styles */
+.header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.header h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #4a90e2; /* Blue color for the title */
+}
+
+.search-box {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.search-box:focus {
+  border-color: #4a90e2; /* Highlight border on focus */
+}
+
+.filter-dropdown {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.filter-dropdown:focus {
+  border-color: #4a90e2; /* Highlight border on focus */
+}
+
+/* Results section */
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.result-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.result-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.result-card h2 {
+  margin: 0 0 0.5rem;
+  color: #4a90e2; /* Blue for post titles */
+}
+
+.result-card .category {
+  font-size: 0.9rem;
+  color: #777;
+  font-style: italic;
+}
+
+.result-card p {
+  color: #555; /* Dark gray for content */
+}
+
+.no-results {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #777;
+  margin-top: 1rem;
+}
+
+/* Mobile-friendly styles */
+@media (max-width: 600px) {
+  .search-box,
+  .filter-dropdown {
+    font-size: 0.9rem;
+  }
+
+  .result-card {
+    padding: 0.8rem;
+  }
+}
